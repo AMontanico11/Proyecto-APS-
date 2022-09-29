@@ -1,0 +1,174 @@
+.menu{
+    width: 100%;
+}
+.Concepto{
+    position: absolute;
+    margin-top: -42rem;
+    color: white;
+    padding: 5rem;
+}
+.Concepto h2{
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 5rem;
+}
+.Concepto p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    line-height: 2.5rem;
+ 
+}
+.Bromotologia{
+    height: 50rem;
+    width: 100%;
+    background-color: #29687C;
+}
+.ConceptoBromotologia{
+    position: absolute;
+    margin-left: 45rem;
+    margin-top: 10rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-style: normal;
+}
+.ConceptoBromotologia p{
+    margin-top: 2rem;
+    font-size: 25px;
+    line-height: 3rem;
+}
+.ConceptoBromotologia h2{
+    font-size: 60px;
+    font-weight: 200;
+}
+.Ubication1{
+    position: absolute;
+    margin-top: -40rem;
+    margin-left: 50rem;
+}
+.person{
+    border-radius: 100%;
+}
+.Dir1{
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+.Dir2{
+    border-radius: 100%;
+    margin-left: 20rem;
+    margin-top: -3rem;
+}
+.fon-inferior{
+    width: 100%;
+}
+.inferior{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.inferior div{
+    margin-top: -36rem;
+    margin-left: 6rem;
+    text-align: center;
+   
+}
+.boton{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 11rem;
+    padding: 1rem;
+    font-size: 20px;
+   
+}
+.inferior .text{
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+.inferior img{
+    border-radius: 100%;
+}
+.Piramide{
+    margin-top: -1rem;
+    height: 70rem;
+    width: 100%;
+    background-color: #2DB79C;
+    color: white;
+}
+.Piramide-text{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+    margin-left: 2rem;
+ 
+}
+.Piramide-text h1{
+    font-size: 60px;
+    font-weight: 150;
+}
+.Piramide-text p{
+    margin-top: 2rem;
+    font-size: 25px;
+    font-weight: -10;
+    line-height: 2.5rem;
+}
+.Piramide-img{
+    margin-top: 32rem;
+    margin-left: 8rem;
+}
+.flecha{
+    position: absolute;
+    margin-top: -17rem;
+    margin-left: 37rem;
+}
+.flecha1{
+    position: absolute;
+    margin-top: -11.5rem;
+    margin-left: 40rem;
+}
+.flecha2{
+    position: absolute;
+    margin-top: -6rem;
+    margin-left: 42rem;
+}
+ 
+.Dulces{
+    position: absolute;
+    margin-top: -28rem;
+    margin-left: 40rem;
+    font-size: 30px;
+}
+.Carnes{
+    position: absolute;
+    margin-top: -22rem;
+    margin-left: 43rem;
+    font-size: 30px;
+}
+.Lacteos{
+    position: absolute;
+    margin-top: -16.5rem;
+    margin-left: 47rem;
+    font-size: 30px;
+}
+.Verduras{
+    position: absolute;
+    margin-top: -11rem;
+    margin-left: 49rem;
+    font-size: 30px;
+}
+.Hidratos{
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 51rem;
+    font-size: 30px;
+}
