@@ -1,0 +1,105 @@
+/*/****LAS PROTEINAS****/
+.Sector{
+    height: 35rem;
+    width: 100%;
+    background-color: #29687C;
+    margin-top: -1rem;
+    color: white;
+}
+.video1{
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 14%;
+    border-radius: 5px;
+    background-size: cover;
+ 
+}
+.Descripcion{
+    width: 60rem;
+    height: 35rem;
+}
+.Sector p{
+    position: absolute;
+    margin-top: 7rem;
+    font-size: 25px;
+    font-weight:unset;
+    text-align: center;
+    line-height: 2.7rem;
+    margin-left: 5rem;
+}
+ 
+.Tabla-2{
+    border-top: 11px solid #D9D9D9;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    margin-top: -47.6%;
+    margin-left: 15%;
+    height:400px;
+    width:70%;
+    overflow-y: auto;
+    overflow-x: scroll;
+   
+}
+.Tabla-2::-webkit-scrollbar{
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+.Tabla-2::-webkit-scrollbar-thumb{
+    background-color: #2DB79C;
+    border-radius: 10px;
+}
+.Tabla-2 .table {
+    width:300px;
+    /*background-color:gray;*/
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.Sección1{
+   
+   
+    border: 5px solid #D9D9D9;
+   
+   
+}
+.Sección1 div{
+   margin-bottom: 2rem;
+   padding: 1rem 3rem 0rem 3rem;
+   
+}
+.tittle{
+    font-size: 64px;
+    width: 70%;
+    margin-left: 15%;
+    height: 15%;
+    padding: 2rem 3rem 1rem 3rem;
+    position: absolute;
+    text-align: center;
+    color: #041243;
+    background-color: white;
+    margin-top: -55%;
+    font-weight: 100;
+}
+.background{
+    background-color: #458F67;
+    height: 600px;
+    width: 75%;
+    position: absolute;
+    margin-top: -50rem;
+    margin-left: 10rem;
+    border-radius: 20px;
+}
+ 
+.tittle2{
+    margin-left: 22%;
+    position: absolute;
+    margin-top: -60%;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+}
