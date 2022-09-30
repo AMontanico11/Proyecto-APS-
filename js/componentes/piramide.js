@@ -1,6 +1,23 @@
+// JavaScript code
+function search_animal() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('animals');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="list-item";                 
+      }
+  }
+}
+
 export function ProteinaDesgloce(){
     let Despliegue = [
         {
+          
             Piramide:
             '<header>' +
             '<img class="banner" src="./img/nutria.2 1.png" alt="">'+
@@ -220,6 +237,7 @@ export function ProteinaDesgloce(){
             '<h1 class="tittle">Frutas</h1>'+
 
 
+
             '<main>'+
 
             '<div class="slider">'+
@@ -308,6 +326,36 @@ export function ProteinaDesgloce(){
             '</main>' +
 
 
+            '<img class="Search-lp" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2022.png?raw=true" alt="">'+
+            
+            '<div id="header-buscador">'+
+     
+            '<ul class="nav">'+
+              '<li><input id="searchbar" onkeyup="search_animal()" type="text"'+
+              'name="search" placeholder="Search for food..">'+
+              '<ul id="list">'+
+                '<li type="radio" name="boton" id="boton11" class="animals"><label for="boton11">Manzana</li>'+
+                '<li type="radio" name="boton" id="boton14" class="animals"><label for="boton12">Calabaza</label></li>'+
+                '<li type="radio" name="boton" id="boton12" class="animals"><label for="boton14">Cebolla</li>'+
+                '<li type="radio" name="boton" id="boton13" class="animals"><label for="boton13">Marañon</li>'+
+                '<li type="radio" name="boton" id="boton10" class="animals"><label for="boton1">Aguacate</li>'+
+                '<li type="radio" name="boton" id="boton9" class="animals"><label for="boton9">Limon</li>'+
+                '<li type="radio" name="boton" id="boton8" class="animals"><label for="boton8">Brócoli</li>'+
+                '<li type="radio" name="boton" id="boton7" class="animals"><label for="boton7">Zanahoria</li>'+
+                '<li type="radio" name="boton" id="boton6" class="animals"><label for="boton6">Pepino</li>'+
+                '<li type="radio" name="boton" id="boton5" class="animals"><label for="boton5">Banano</li>'+
+                '<li type="radio" name="boton" id="boton4" class="animals"><label for="boton4">Melocotón</li>'+
+                '<li type="radio" name="boton" id="boton3" class="animals"><label for="boton3">Coco</li>'+
+                '<li type="radio" name="boton" id="boton2" class="animals"><label for="boton2">Fresa</li>'+
+                '<li type="radio" name="boton" id="boton1" class="animals"><label for="boton1">Aguacate</li>'+
+                '</ul>'+
+                '</li>'+
+            
+            '</ul>'+
+          '</div>'+
+
+          
+
 
             '<div class="Integrantes">'+
             '<div>Integrantes <br> Biologia: <br> Karen Amanda Calderas de León <br> Jaydi Dayana Orrego Perez <br> Angel Gabriel Castro</div>'+
@@ -322,7 +370,8 @@ export function ProteinaDesgloce(){
         
     }
     ]
-    
+    // JavaScript code
+
     let Proteina = document.querySelector("#Proteina")
      
      function Desglosar(){
@@ -476,6 +525,32 @@ export function ProteinaDesgloce(){
             '<h1 class="tittle">Frutas</h1>'+
 
 
+      '<div id="header-buscador">'+
+     
+      '<ul class="nav">'+
+        '<li><input id="searchbar" onkeyup="search_animal()" type="text"'+
+        'name="search" placeholder="Search for food..">'+
+        '<ul id="list">'+
+          '<li type="radio" name="boton" id="boton11" class="animals"><label for="boton11">Manzana</li>'+
+          '<li type="radio" name="boton" id="boton14" class="animals"><label for="boton12">Calabaza</label></li>'+
+          '<li type="radio" name="boton" id="boton12" class="animals"><label for="boton14">Cebolla</li>'+
+          '<li type="radio" name="boton" id="boton13" class="animals"><label for="boton13">Marañon</li>'+
+          '<li type="radio" name="boton" id="boton10" class="animals"><label for="boton1">Aguacate</li>'+
+          '<li type="radio" name="boton" id="boton9" class="animals"><label for="boton9">Limon</li>'+
+          '<li type="radio" name="boton" id="boton8" class="animals"><label for="boton8">Brócoli</li>'+
+          '<li type="radio" name="boton" id="boton7" class="animals"><label for="boton7">Zanahoria</li>'+
+          '<li type="radio" name="boton" id="boton6" class="animals"><label for="boton6">Pepino</li>'+
+          '<li type="radio" name="boton" id="boton5" class="animals"><label for="boton5">Banano</li>'+
+          '<li type="radio" name="boton" id="boton4" class="animals"><label for="boton4">Melocotón</li>'+
+          '<li type="radio" name="boton" id="boton3" class="animals"><label for="boton3">Coco</li>'+
+          '<li type="radio" name="boton" id="boton2" class="animals"><label for="boton2">Fresa</li>'+
+          '<li type="radio" name="boton" id="boton1" class="animals"><label for="boton1">Aguacate</li>'+
+          '</ul>'+
+          '</li>'+
+      
+      '</ul>'+
+    '</div>'+
+
             '<main>'+
 
             '<div class="slider">'+
@@ -562,6 +637,34 @@ export function ProteinaDesgloce(){
             '</div>'+
           
             '</main>' +
+
+            '<img class="Search-lp" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2022.png?raw=true" alt="">'+
+            
+            '<div id="header-buscador">'+
+     
+            '<ul class="nav">'+
+              '<li><input id="searchbar" onkeyup="search_animal()" type="text"'+
+              'name="search" placeholder="Search for food..">'+
+              '<ul id="list">'+
+                '<li type="radio" name="boton" id="boton11" class="animals"><label for="boton11">Manzana</li>'+
+                '<li type="radio" name="boton" id="boton14" class="animals"><label for="boton12">Calabaza</label></li>'+
+                '<li type="radio" name="boton" id="boton12" class="animals"><label for="boton14">Cebolla</li>'+
+                '<li type="radio" name="boton" id="boton13" class="animals"><label for="boton13">Marañon</li>'+
+                '<li type="radio" name="boton" id="boton10" class="animals"><label for="boton1">Aguacate</li>'+
+                '<li type="radio" name="boton" id="boton9" class="animals"><label for="boton9">Limon</li>'+
+                '<li type="radio" name="boton" id="boton8" class="animals"><label for="boton8">Brócoli</li>'+
+                '<li type="radio" name="boton" id="boton7" class="animals"><label for="boton7">Zanahoria</li>'+
+                '<li type="radio" name="boton" id="boton6" class="animals"><label for="boton6">Pepino</li>'+
+                '<li type="radio" name="boton" id="boton5" class="animals"><label for="boton5">Banano</li>'+
+                '<li type="radio" name="boton" id="boton4" class="animals"><label for="boton4">Melocotón</li>'+
+                '<li type="radio" name="boton" id="boton3" class="animals"><label for="boton3">Coco</li>'+
+                '<li type="radio" name="boton" id="boton2" class="animals"><label for="boton2">Fresa</li>'+
+                '<li type="radio" name="boton" id="boton1" class="animals"><label for="boton1">Aguacate</li>'+
+                '</ul>'+
+                '</li>'+
+            
+            '</ul>'+
+          '</div>'+
 
 
             '<div class="Integrantes">'+
@@ -815,7 +918,33 @@ export function ProteinaDesgloce(){
           
             '</main>' +
     
-    
+            '<img class="Search-lp" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2022.png?raw=true" alt="">'+
+            
+            '<div id="header-buscador">'+
+     
+            '<ul class="nav">'+
+              '<li><input id="searchbar" onkeyup="search_animal()" type="text"'+
+              'name="search" placeholder="Search for food..">'+
+              '<ul id="list">'+
+                '<li type="radio" name="boton" id="boton11" class="animals"><label for="boton11">Manzana</li>'+
+                '<li type="radio" name="boton" id="boton14" class="animals"><label for="boton12">Calabaza</label></li>'+
+                '<li type="radio" name="boton" id="boton12" class="animals"><label for="boton14">Cebolla</li>'+
+                '<li type="radio" name="boton" id="boton13" class="animals"><label for="boton13">Marañon</li>'+
+                '<li type="radio" name="boton" id="boton10" class="animals"><label for="boton1">Aguacate</li>'+
+                '<li type="radio" name="boton" id="boton9" class="animals"><label for="boton9">Limon</li>'+
+                '<li type="radio" name="boton" id="boton8" class="animals"><label for="boton8">Brócoli</li>'+
+                '<li type="radio" name="boton" id="boton7" class="animals"><label for="boton7">Zanahoria</li>'+
+                '<li type="radio" name="boton" id="boton6" class="animals"><label for="boton6">Pepino</li>'+
+                '<li type="radio" name="boton" id="boton5" class="animals"><label for="boton5">Banano</li>'+
+                '<li type="radio" name="boton" id="boton4" class="animals"><label for="boton4">Melocotón</li>'+
+                '<li type="radio" name="boton" id="boton3" class="animals"><label for="boton3">Coco</li>'+
+                '<li type="radio" name="boton" id="boton2" class="animals"><label for="boton2">Fresa</li>'+
+                '<li type="radio" name="boton" id="boton1" class="animals"><label for="boton1">Aguacate</li>'+
+                '</ul>'+
+                '</li>'+
+            
+            '</ul>'+
+          '</div>'+
     
                 '<div class="Integrantes">'+
                 '<div>Integrantes <br> Biologia: <br> Karen Amanda Calderas de León <br> Jaydi Dayana Orrego Perez <br> Angel Gabriel Castro</div>'+
@@ -1067,7 +1196,33 @@ export function ProteinaDesgloce(){
           
             '</main>' +
 
-
+            '<img class="Search-lp" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2022.png?raw=true" alt="">'+
+            
+            '<div id="header-buscador">'+
+     
+            '<ul class="nav">'+
+              '<li><input id="searchbar" onkeyup="search_animal()" type="text"'+
+              'name="search" placeholder="Search for food..">'+
+              '<ul id="list">'+
+                '<li type="radio" name="boton" id="boton11" class="animals"><label for="boton11">Manzana</li>'+
+                '<li type="radio" name="boton" id="boton14" class="animals"><label for="boton12">Calabaza</label></li>'+
+                '<li type="radio" name="boton" id="boton12" class="animals"><label for="boton14">Cebolla</li>'+
+                '<li type="radio" name="boton" id="boton13" class="animals"><label for="boton13">Marañon</li>'+
+                '<li type="radio" name="boton" id="boton10" class="animals"><label for="boton1">Aguacate</li>'+
+                '<li type="radio" name="boton" id="boton9" class="animals"><label for="boton9">Limon</li>'+
+                '<li type="radio" name="boton" id="boton8" class="animals"><label for="boton8">Brócoli</li>'+
+                '<li type="radio" name="boton" id="boton7" class="animals"><label for="boton7">Zanahoria</li>'+
+                '<li type="radio" name="boton" id="boton6" class="animals"><label for="boton6">Pepino</li>'+
+                '<li type="radio" name="boton" id="boton5" class="animals"><label for="boton5">Banano</li>'+
+                '<li type="radio" name="boton" id="boton4" class="animals"><label for="boton4">Melocotón</li>'+
+                '<li type="radio" name="boton" id="boton3" class="animals"><label for="boton3">Coco</li>'+
+                '<li type="radio" name="boton" id="boton2" class="animals"><label for="boton2">Fresa</li>'+
+                '<li type="radio" name="boton" id="boton1" class="animals"><label for="boton1">Aguacate</li>'+
+                '</ul>'+
+                '</li>'+
+            
+            '</ul>'+
+          '</div>'+
 
             '<div class="Integrantes">'+
             '<div>Integrantes <br> Biologia: <br> Karen Amanda Calderas de León <br> Jaydi Dayana Orrego Perez <br> Angel Gabriel Castro</div>'+
