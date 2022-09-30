@@ -1,0 +1,126 @@
+.tittle3{
+    margin-left: 31%;
+    position: absolute;
+    margin-top: 6.5%;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+}
+.Healthy{
+    max-height: 300rem;
+    width: 100%;
+    background-size:initial;
+   
+}
+.IMC{
+    width: 2rem;
+    height: 165rem;
+}
+.IMG-IMC{
+    background-image: url(https://github.com/Gerardo072/Img-Aps-/blob/main/WhatsApp%20Image%202022-09-08%20at%206.39.55%20PM.jpeg?raw=true);
+   
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 250rem;
+    max-width: 100%;
+    background-position: center;
+    background-position: top;
+ 
+}
+.Cuadrante{
+    background-color: #29687C;
+    position: absolute;
+    width: 60rem;
+    height: 100rem;
+    margin-top: -143rem;
+    margin-left: 15%;
+}
+.nutria{
+    position: absolute;
+    margin-top: -180.5%;
+    margin-left: 20%;
+}
+.Resultados{
+    padding: 3% 1% 5% 0%;
+    text-align: center;
+    margin-top: -37%;
+    margin-left: 27%;
+    position: absolute;
+    font-size: 96px;
+    font-weight: 50;
+    cursor: pointer;
+}
+.Resultados{
+    border: 1px solid white;
+    height: 40%;
+    width: 45%;
+    border-radius: 70px;
+ 
+}
+/*****/
+:root {
+    --ancho: 500px;
+  }
+  * {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  main {
+   
+    max-width: 1370px;
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    background-color: #29687C;
+  }
+ 
+  .slider {
+    max-width: 900px;
+    height: 500px;
+    margin: 0% auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    background-color: #29687C;
+  }
+  .slider input[type="radio"] {
+    display: none;
+  }
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    outline: 1px solid transparent;
+  }
+ 
+  .slider input[type="radio"]:checked ~ img {
+      transform: scale(1);
+      opacity: 1;
+  }
+  .slider input[type="radio"] + label {
+    position: relative;
+    z-index: 100;
+    margin: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #000;
+    background-color: hsla(0, 0%, 100%, 1);
+  }
+  .slider input[type="radio"]:checked + label {
+    box-shadow: 0 0 0 0px white,
+                0 0 0 2px #fff inset;
+    background-color: #91EBDA;
+  }
+  label:hover {
+    cursor: pointer;
+  }
