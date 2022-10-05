@@ -1,4 +1,3 @@
-import {CalculoIMC} from "./estadistica.js"
 
  export function home_page(){
     let homepage = [
@@ -6,7 +5,7 @@ import {CalculoIMC} from "./estadistica.js"
             header: 
             '<header>' +
             '<img class="banner" src="./img/nutria.2 1.png" alt="">'+
-            '<p id = "Calculo" class="Calculo" href="">Calcular</p>' +
+            '<a  class="Calculo" href="./estadistica.html">Calcular</a>' +
             '</header>',
     
             paginaPrincipal:
@@ -34,7 +33,7 @@ import {CalculoIMC} from "./estadistica.js"
     let root = document.querySelector("#root")
      root.innerHTML = homepage[0].header + homepage[0].paginaPrincipal + homepage[0].footer;
 
-     CalculoIMC();
+     
     
 
  }
