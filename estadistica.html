@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/estadistica.css">
+    <link rel="stylesheet" href="css/ConfiGeneral.css">
+    <link rel="stylesheet" href="css/movil.css">
+
+</head>
+<body>
+    <header>
+        <img class="banner" src="https://github.com/Gerardo072/Img-Aps-/blob/main/nutria.2%201.png?raw=true" alt="">
+        <a class="primer" href="./index.html">Inicio</a>
+        
+    </header>
+
+    
+
+        <h1 class="tittle3">Agrega tus datos</h1>
+        <section class="IMG-IMC">
+
+        <div class="IMC"></div>
+
+        <div class="Cuadrante">
+        
+        </div>
+        <img class="nutria" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/nutriachico%202.png?raw=true" alt="">
+    
+        
+        </section>
+
+
+    <section class="Body">
+        <form id="formulario" onsubmit="calcularIMC(); return false">
+            <label for="peso">¿Cuál es tu peso? (kg):</label>
+      <input class="Barra" type="text" id="peso" required="required">
+      <br>
+      <label for="altura">¿Cuál es tu altura? (cm):</label>
+      <input class="Barra" type="text" id="altura" required="required">
+      <br>
+            <label for="nombre">¿Cuál es tu género?</label>
+            <input class="Barra" type="text" id="nombre">
+      <br>
+      <label for="altura">Selecciona tu intervalo de edad:</label>
+      <input class="Barra" type="text" >
+      <br>
+      <label for="peso">¿Cual es tu nivel de actividad? </label>
+      <input class="Barra" type="text" >
+      <br>
+      <label for="peso">¿Cuanto mide tu cintura? (cm):</label>
+      <input class="Barra" type="text" >
+      <br>
+      <label for="peso">¿Cuanto mide tu cuello? (cm)</label>
+      <input class="Barra" type="text" >
+
+      <button id="Botonresultado" type="submit">Veamos tus <br> resultados</button>
+      
+      
+    <p id="resultado"></p>
+      
+    </form>
+    <div id="resultado">
+        
+    </div>
+
+</section>
+
+<script>
+    function calcularIMC() {
+    var nombre = document.getElementById('nombre').value;
+    var alturaEnCentimetros = parseInt(document.getElementById('altura').value);
+    var alturaEnMetros = alturaEnCentimetros / 100;
+    var pesoEnKilos = parseInt(document.getElementById('peso').value);
+  
+    var imc = Math.round(pesoEnKilos / (alturaEnMetros * alturaEnMetros));
+    var clasificacion;
+    
+    if (imc < 18.5) {
+      clasificacion = 'Peso bajo';
+    } else if (imc < 25) {
+      clasificacion = 'Peso normal';
+    } else {
+      clasificacion = ' sobrepeso';
+    }
+    /* Consejo:
+    
+    */
+    var Botonresultado = document.querySelector("#Botonresultado")
+    var resultado = document.querySelector("#resultado")
+    var respuesta = 'Hola, tu IMC es de ' + imc + ' y tienes ' + clasificacion;
+
+    function mostrarResultado (){
+      
+      Botonresultado.classList.add("quitar")
+      if(imc < 18.5){
+        resultado.innerHTML = '<h2>'+ respuesta +'</h2>' + '<img src= "https://github.com/AMontanico11/IMGs-ApS/blob/main/desnutrida%206.png?raw=true"> ' + '<a href="./Pesos.html" id = "Intento">'+ 'Leer mas' + '</a>';
+      } else if (imc > 25){
+        resultado.innerHTML = '<h2>'+ respuesta +'</h2>' + '<img src= "https://github.com/AMontanico11/IMGs-ApS/blob/main/mamada%202.png?raw=true">' + '<a href="./Pesos.html"  id = "Intento">'+ 'Leer mas' + '</a>';
+      }
+
+
+    }
+
+   
+
+
+
+    Botonresultado.addEventListener("click", mostrarResultado)
+
+    
+  }
+</script>
+
+        <div class="Integrantes">
+        <div>Integrantes <br> Biologia: <br> Karen Amanda Calderas de León <br> Jaydi Dayana Orrego Perez <br> Angel Gabriel Castro</div>
+        <div>Integrantes <br> Diseño Gráfico: <br> Detlef Ivan Iquique Galvez <br> Hannah Maribel Mijangos</div>
+        <div>Integrantes <br> Computación: <br> Oscar Gerardo de Jesus Ordoñez Alvarez <br> Alexis Fabian Pirir Montanico</div>
+    
+        <div>Empresa: <br> Healthy Point</div>
+        <div>Paginas de referencia: <br> Nutrium <br> Pagina de inicio con Genshin Impact</div>
+        </div>
+        <script src="./js/componentes/estadistica.js"></script>
+</body>
+</html>
