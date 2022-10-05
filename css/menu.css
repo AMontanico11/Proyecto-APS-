@@ -1,3 +1,5 @@
+/*PARTE DE MENU*/
+
 .menu{
     width: 100%;
 }
@@ -19,7 +21,7 @@
     margin-top: 2rem;
     margin-left: 3rem;
     line-height: 2.5rem;
- 
+
 }
 .Bromotologia{
     height: 50rem;
@@ -76,7 +78,7 @@
     margin-top: -36rem;
     margin-left: 6rem;
     text-align: center;
-   
+    
 }
 .boton{
     margin-left: 1.5rem;
@@ -87,7 +89,7 @@
     width: 11rem;
     padding: 1rem;
     font-size: 20px;
-   
+    
 }
 .inferior .text{
     text-align: center;
@@ -110,7 +112,7 @@
     text-align: center;
     margin-top: 7rem;
     margin-left: 2rem;
- 
+
 }
 .Piramide-text h1{
     font-size: 60px;
@@ -141,7 +143,7 @@
     margin-top: -6rem;
     margin-left: 42rem;
 }
- 
+
 .Dulces{
     position: absolute;
     margin-top: -28rem;
