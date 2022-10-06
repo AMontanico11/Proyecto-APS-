@@ -617,3 +617,47 @@
 .primer{
     margin-left: 59rem;
 }
+
+=======
+.ParteDeLogo{
+  display: flex;
+  justify-content: center ;
+  align-items:center;
+}
+.ParteDeLogo{
+  margin-top: -45rem;
+  margin-bottom: 5vh;
+  
+}
+header{
+    
+    width: 100%;
+    height: 80px;
+    background-color: #29687C;
+}
+ header a{
+    margin-top: 1.3rem;
+    color: white;
+    text-decoration: none;
+
+    padding: 0.7rem;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px white solid;
+}
+.Integrantes{
+    padding: 3rem 3rem 3rem 0rem;
+
+    display: flex;
+    flex-direction: row;
+}
+.Integrantes div{
+    color: white;
+    border-radius: 10px;
+    width: 30rem;
+    margin-left: 3rem;
+    border: 1px solid white;
+
+    padding: 2rem;
+}
+
