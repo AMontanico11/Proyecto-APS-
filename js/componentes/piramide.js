@@ -1,4 +1,5 @@
 
+
 export function ProteinaDesgloce(){
   let Despliegue = [
       {
@@ -7,7 +8,7 @@ export function ProteinaDesgloce(){
           '<header>' +
           '<img class="banner" src="./img/nutria.2 1.png" alt="">'+
           '<a class="primer" href="">Inicio</a>' +
-          '<a class="segundo" href="">Calcular</a>' +
+          '<p id="btonempezar" class="pointer" href="">< Volver</p>' +
           '</header>'+
 
           '<img class="menu" src="https://github.com/Gerardo072/Img-Aps-/blob/main/Frutas.png?raw=true" alt="">'+
@@ -36,7 +37,7 @@ export function ProteinaDesgloce(){
 
 
 
-          '<img class="fon-inferior" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
+          '<img class="fondo-de-tabla" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
   
           '<section class="background"></section>'+
   
@@ -130,7 +131,7 @@ export function ProteinaDesgloce(){
             '</div>'+
             '<div class="diapositiva">'+
               '<input type="radio" name="boton" id="boton7">'+
-              '<label for="boton7"></label>'+
+              '<label for="boton8"></label>'+
               '<img src="https://github.com/Gerardo072/ApS-frutas/blob/main/Calorias%20(14).png?raw=true">'+
             '</div>'+
             '<div class="diapositiva">'+
@@ -224,7 +225,8 @@ export function ProteinaDesgloce(){
    
    function Desglosar(){
       root.innerHTML = Despliegue[0].Piramide;
-
+      empezar();
+      
       
    }
 
@@ -267,7 +269,7 @@ export function CarbohidratosDesgloce(){
           '<header>' +
           '<img class="banner" src="./img/nutria.2 1.png" alt="">'+
           '<a class="primer" href="">Inicio</a>' +
-          '<a class="segundo" href="">Calcular</a>' +
+          '<p id="btonempezar" class="pointer" href="">< Volver</p>' +
           '</header>'+
 
           '<img class="menu" src="https://github.com/Gerardo072/Img-Aps-/blob/main/Frutas.png?raw=true" alt="">'+
@@ -279,7 +281,7 @@ export function CarbohidratosDesgloce(){
   
 
 
-          '<div class="Sector">'+
+          '<div class="seccion">'+
           '<p>'+
           'Los carbohidratos son las moléculas que cumplen la función primordial de'+ 
           'brindar <br> la energía que el cuerpo humano necesita, este proceso se lleva'+
@@ -293,7 +295,7 @@ export function CarbohidratosDesgloce(){
 
 
 
-          '<img class="fon-inferior" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
+          '<img class="fondo-de-tabla" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
   
           '<section class="background"></section>'+
   
@@ -335,31 +337,7 @@ export function CarbohidratosDesgloce(){
           
 
 
-    '<div id="header-buscador">'+
-   
-    '<ul class="nav">'+
-      '<li><input id="searchbar" onkeyup="search_animal()" type="text"'+
-      'name="search" placeholder="Search for food..">'+
-      '<ul id="list">'+
-        '<li type="radio" name="boton" id="boton11" class="animals"><label for="boton11">Manzana</li>'+
-        '<li type="radio" name="boton" id="boton14" class="animals"><label for="boton12">Calabaza</label></li>'+
-        '<li type="radio" name="boton" id="boton12" class="animals"><label for="boton14">Cebolla</li>'+
-        '<li type="radio" name="boton" id="boton13" class="animals"><label for="boton13">Marañon</li>'+
-        '<li type="radio" name="boton" id="boton10" class="animals"><label for="boton1">Aguacate</li>'+
-        '<li type="radio" name="boton" id="boton9" class="animals"><label for="boton9">Limon</li>'+
-        '<li type="radio" name="boton" id="boton8" class="animals"><label for="boton8">Brócoli</li>'+
-        '<li type="radio" name="boton" id="boton7" class="animals"><label for="boton7">Zanahoria</li>'+
-        '<li type="radio" name="boton" id="boton6" class="animals"><label for="boton6">Pepino</li>'+
-        '<li type="radio" name="boton" id="boton5" class="animals"><label for="boton5">Banano</li>'+
-        '<li type="radio" name="boton" id="boton4" class="animals"><label for="boton4">Melocotón</li>'+
-        '<li type="radio" name="boton" id="boton3" class="animals"><label for="boton3">Coco</li>'+
-        '<li type="radio" name="boton" id="boton2" class="animals"><label for="boton2">Fresa</li>'+
-        '<li type="radio" name="boton" id="boton1" class="animals"><label for="boton1">Aguacate</li>'+
-        '</ul>'+
-        '</li>'+
     
-    '</ul>'+
-  '</div>'+
 
           '<main>'+
 
@@ -491,13 +469,15 @@ export function CarbohidratosDesgloce(){
   let Carbohidratos = document.querySelector("#Carbohidratos")
    
    function Desglosar(){
-      root.innerHTML = Desplegar[0].Columna;   
+      root.innerHTML = Desplegar[0].Columna;  
+      empezar();
    }
    Carbohidratos.addEventListener("click", Desglosar)
 }
 
    /********PARTE DE LIPIDOS************/
 
+   import {empezar} from "./menu.js"
    export function LípidosDesgloce(){
       let Desplegar = [
           {
@@ -505,20 +485,21 @@ export function CarbohidratosDesgloce(){
               '<header>' +
               '<img class="banner" src="./img/nutria.2 1.png" alt="">'+
               '<a class="primer" href="">Inicio</a>' +
-              '<a class="segundo" href="">Calcular</a>' +
+              '<p id="btonempezar" class="pointer" href="">< Volver</p>' +
               '</header>'+
   
               '<img class="menu" src="https://github.com/Gerardo072/Img-Aps-/blob/main/Frutas.png?raw=true" alt="">'+
               '<h1 class="tittle2">¿Qué son las Lípidos?</h1>'+
 
           '<div class="video1">'+
-          '<iframe class="Descripcion" width="560" height="315" src="https://www.youtube.com/embed/WWzw5NrFwPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'+
+          
+          '<iframe class="Descripcion" width="560" height="315" src="https://www.youtube.com/embed/gARctUArIdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'+
           '</div>'+
       
   
   
   
-              '<div class="Sector">'+
+              '<div class="variado">'+
               '<p>'+
               'Los lípidos son las moléculas que se originan por completo <br> de '+
               'la condensación de tioésteres o unidades de isopreno. La <br> función que '+
@@ -535,7 +516,7 @@ export function CarbohidratosDesgloce(){
   
   
   
-              '<img class="fon-inferior" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
+              '<img class="fondo-de-tabla" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
       
               '<section class="background"></section>'+
       
@@ -708,12 +689,14 @@ export function CarbohidratosDesgloce(){
       let Lípidos = document.querySelector("#Lípidos")
        
        function Desglosar(){
-          root.innerHTML = Desplegar[0].Columna;   
+          root.innerHTML = Desplegar[0].Columna; 
+          empezar();  
        }
        Lípidos.addEventListener("click", Desglosar)
    }
 
 /********PARTE DE VITAMINAS************/
+
 
 export function VitaminasDesgloce(){
   let Desplegar = [
@@ -722,20 +705,21 @@ export function VitaminasDesgloce(){
           '<header>' +
           '<img class="banner" src="./img/nutria.2 1.png" alt="">'+
           '<a class="primer" href="">Inicio</a>' +
-          '<a class="segundo" href="">Calcular</a>' +
+          '<p id="btonempezar" class="pointer" href="">< Volver</p>' +
           '</header>'+
 
           '<img class="menu" src="https://github.com/Gerardo072/Img-Aps-/blob/main/Frutas.png?raw=true" alt="">'+
           '<h1 class="tittle2">¿Qué son las Vitaminas?</h1>'+
 
           '<div class="video1">'+
-          '<iframe class="Descripcion" width="560" height="315" src="https://www.youtube.com/embed/5DRr2otjce4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'+
+          
+          '<iframe class="Descripcion" width="560" height="315" src="https://www.youtube.com/embed/OsR0_OjyIhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'+
           '</div>'+
   
 
 
 
-          '<div class="Sector">'+
+          '<div class="section">'+
           '<p>'+
           'Las vitaminas son compuestos orgánicos con gran relevancia <br> para el'+ 
           'metabolismo humano. estas sustancias inciden en la salud <br> beneficiando al '+
@@ -753,7 +737,7 @@ export function VitaminasDesgloce(){
 
 
 
-          '<img class="fon-inferior" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
+          '<img class="fondo-de-tabla" src="https://github.com/AMontanico11/IMGs-ApS/blob/main/image%2020.png?raw=true" alt="">'+
   
           '<section class="background"></section>'+
   
@@ -925,6 +909,7 @@ export function VitaminasDesgloce(){
    
    function Desglosar(){
       root.innerHTML = Desplegar[0].Columna;   
+      empezar();
    }
    Vitaminas.addEventListener("click", Desglosar)
 }

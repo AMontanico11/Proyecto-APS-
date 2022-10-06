@@ -53,6 +53,9 @@ header a{
 .body img{
     width: 100%;
 }
+.fondo-de-tabla{
+    width: 100%;
+}
 .primer{
     margin-left: 59rem;
 }
