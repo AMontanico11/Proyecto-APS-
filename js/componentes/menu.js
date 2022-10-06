@@ -158,3 +158,4 @@ export function empezar(){
 
      btonempezar.addEventListener("click", InicioPagina)
  }
+ 
